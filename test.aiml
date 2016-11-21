@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+  <!-- insert your AIML categories here -->
+
+  <category>
+      <pattern>what is your name</pattern>
+      <template>my name is titobot, i am an artificial intelligent machine..I chat on behalf of tito.</template>
+  </category>
+  <category>
+      <pattern>how old are you</pattern>
+      <template>i am <bot name="age"/> years old</template>
+  </category>
+  <category>
+      <pattern>MY NAME IS * AND I AM * YEARS OLD</pattern>
+      <template>Hi <star/>. I can be <star index="2"/> years old too but i am 18years</template>
+  </category>
+  <category>
+      <pattern>tell me about yourself</pattern>
+      <template>my name is titobot and i am 18years old, i am tito's chat bot</template>
+  </category>
+  <category>
+      <pattern>how are you</pattern>
+      <template><srai>hey wassup</srai></template>
+  </category>
+  <category>
+      <pattern>my name is *</pattern>
+      <template>Nice to meet you, <set name="name"><star/></set></template>
+  </category>
+  <category>
+      <pattern>what is my name</pattern>
+      <template>your name is <get name="name"/>.</template>
+  </category>
+  <category>
+      <pattern>HI *</pattern>
+      <template>Hello</template>
+  </category>
+  <category>
+      <pattern>hey wassup</pattern>
+      <template>i am cool, and you?</template>
+  </category> 
+  <category>
+      <pattern>^ fine ^</pattern>
+      <template>thats good, i am fine as well</template>
+  </category>
+  <category>
+      <pattern>thats cool</pattern>
+      <template>yea i know right</template>
+  </category>
+  <category>
+      <pattern>thats cool</pattern>
+      <template>yea i know right</template>
+  </category>      
+  <category>
+      <pattern>ok</pattern>
+      <template>ok what?</template>
+  </category>      
+  <category>
+      <pattern>nothing?</pattern>
+      <template>yea nothing</template>
+  </category>
+  <category>
+      <pattern>THE APPLE IS *</pattern>
+      <template>
+          <think><set var="color"><star/></set></think>
+          i like <get var="color"/> apples
+      </template>
+  </category>
+
+</aiml>
